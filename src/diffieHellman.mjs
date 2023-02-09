@@ -3,8 +3,8 @@ import { subtle } from 'node:crypto'
 // Alice generates her private and public keys
 
 const aliceKey = await subtle.generateKey({
-    name: 'ECDH',
-    namedCurve: 'P-521',
+        name: 'ECDH',
+        namedCurve: 'P-521',
     },
     false, // Key is stored in the trusted platform module, making it inaccessible from ram
     ['deriveKey'])
@@ -12,9 +12,11 @@ const aliceKey = await subtle.generateKey({
 // Bob generates his private and public keys
 
 const bobKey = await subtle.generateKey({
-    name: 'ECDH',
-    namedCurve: 'P-521',
-}, false, ['deriveKey'])
+        name: 'ECDH',
+        namedCurve: 'P-521',
+    },
+    false,
+    ['deriveKey'])
 
 // console.log({ aliceKey, bobKey })
 

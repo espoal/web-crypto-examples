@@ -5,7 +5,9 @@ import { subtle } from 'node:crypto'
 const aliceKey = await subtle.generateKey({
     name: 'ECDH',
     namedCurve: 'P-521',
-}, false, ['deriveKey'])
+    },
+    false, // Key is stored in the trusted platform module, making it inaccessible from ram
+    ['deriveKey'])
 
 // Bob generates his private and public keys
 

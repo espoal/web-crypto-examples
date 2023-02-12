@@ -1,4 +1,12 @@
 {
   "name": "web-crypto-examples",
-  "packageManager": "yarn@4.0.0-rc.39"
+  "scripts": {
+    "format": "rome format src --write",
+    "lint": "rome check src --apply-suggested",
+    "lint:fix": "yarn format && yarn lint"
+  },
+  "packageManager": "yarn@4.0.0-rc.39",
+  "devDependencies": {
+    "rome": "^11.0.0"
+  }
 }

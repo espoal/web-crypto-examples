@@ -5,7 +5,6 @@ const userSalt = 'highEntropySalt'
 // Unique for each user, session
 const sessionSalt = 'highEntropySalt'
 
-
 // Only known to user, need to make sure it has enough entropy
 const secret = 'highEntropySecret'
 
@@ -34,7 +33,11 @@ const userPassword = await subtle.importKey(
 )
 
 // Stored in database
-const derivedBits = await subtle.deriveBits(userKeyAlgorithm, userPassword, length)
+const derivedBits = await subtle.deriveBits(
+	userKeyAlgorithm,
+	userPassword,
+	length,
+)
 
 const userKey = await subtle.importKey('raw', derivedBits, { name }, false, [
 	'deriveKey',

@@ -47,6 +47,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cbor@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "cbor@npm:8.1.0"
+  dependencies:
+    nofilter: "npm:^3.1.0"
+  checksum: baa293e7929f3c7d5829089c3dbd6a6c755ad482d41c4b8f8ed8489b93f3d3af630d443599744647606a571ecf02ad3a28bd9f55306ace3e9587bf43645deae8
+  languageName: node
+  linkType: hard
+
+"nofilter@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "nofilter@npm:3.1.0"
+  checksum: 7c848870b7c60bc9439e2f721620fd0f54ad45c5af287757c29a698ad9939fd9ec98c24b4da2f59e3b43d6812bde198f2e215dc589930d552e4dcb69caaeb687
+  languageName: node
+  linkType: hard
+
 "rome@npm:^11.0.0":
   version: 11.0.0
   resolution: "rome@npm:11.0.0"
@@ -80,6 +96,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web-crypto-examples@workspace:."
   dependencies:
+    cbor: "npm:^8.1.0"
     rome: "npm:^11.0.0"
   languageName: unknown
   linkType: soft

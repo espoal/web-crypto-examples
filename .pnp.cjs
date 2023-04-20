@@ -26,6 +26,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["cbor", "npm:8.1.0"],\
           ["rome", "npm:11.0.0"]\
         ],\
         "linkType": "SOFT"\
@@ -85,6 +86,25 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cbor", [\
+      ["npm:8.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/cbor-npm-8.1.0-c1a4d6266a-9.zip/node_modules/cbor/",\
+        "packageDependencies": [\
+          ["cbor", "npm:8.1.0"],\
+          ["nofilter", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["nofilter", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/nofilter-npm-3.1.0-3c5ba47d92-9.zip/node_modules/nofilter/",\
+        "packageDependencies": [\
+          ["nofilter", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["rome", [\
       ["npm:11.0.0", {\
         "packageLocation": "./.yarn/unplugged/rome-npm-11.0.0-22ed7a887e/node_modules/rome/",\
@@ -105,6 +125,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["web-crypto-examples", "workspace:."],\
+          ["cbor", "npm:8.1.0"],\
           ["rome", "npm:11.0.0"]\
         ],\
         "linkType": "SOFT"\
